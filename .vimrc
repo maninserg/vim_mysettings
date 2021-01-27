@@ -121,7 +121,7 @@ map <F4> :TagbarToggle<CR>   " show list of tasks for F4
 " Hotkeys for buffers
 "====================
 map <C-q> :bd<CR> 	   " CTRL+q - close current buffer 
-map <C-w> :bn<CR> 	   " CTRL+q - next buffer
+map <C-w> :bn<CR> 	   " CTRL+w - next buffer
 
 
 "  When going over the 80-character boundary in Ruby / Python / js / C / C ++, highlight the text on a dark background
