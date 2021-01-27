@@ -2,7 +2,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set number                    " on number of string
 
-
 "=================
 "=================
 " Install Plugins
@@ -51,18 +50,36 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"================
+"================
+" Vim's settings
+"================
+"================
 
-"=================
-"=================
-" Settings Plugins
-"=================
-"=================
 
 syntax on           " ON syntax highlighting
 set enc=utf-8       " Choice of encoding
 set ls=2
 set incsearch
 set hlsearch
+
+"===============================================
+" Create or don't create subsidiary files of vim
+"===============================================
+set nobackup                  " don't create backup's files
+set noswapfile                " don't create swap's files
+set undofile                  " create undo's files
+
+set backupdir=/tmp//
+set directory=/tmp//
+set undodir=/tmp//
+
+
+"=================
+"=================
+" Settings Plugins
+"=================
+"=================
 
 
 "=====================
