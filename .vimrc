@@ -167,18 +167,21 @@ let g:pymode_doc_key = 'K'
 
 " check code
 let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-let g:pymode_lint_ignore="E501,W601,C0110"
-
+let g:pymode_lint_checker = ['pyflakes', 'pep8']
+" start Lint
+map <F5> :PymodeLint<CR>
 " check code after save
 let g:pymode_lint_write = 1
+
 
 " using virtualenv
 let g:pymode_virtualenv = 1
 
+
 " put breakpoints
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_key = '<leader>b'
+
 
 " подстветка синтаксиса
 let g:pymode_syntax = 1
@@ -186,8 +189,10 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
+
 " отключить autofold по коду
 let g:pymode_folding = 0
+
 
 " возможность запускать код
 let g:pymode_run = 0
